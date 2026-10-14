@@ -2,6 +2,7 @@
   "name": "barbearia-imperio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://eduardomoyses.github.io/barbearia-imperial/",
   "type": "module",
   "scripts": {
     "dev": "vite",
