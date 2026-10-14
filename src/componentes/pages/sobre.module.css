@@ -1,0 +1,1021 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecario {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(var(--cor2),0.3);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.imagem {
+    width: auto;
+    height: 55px;
+}
+
+.titulo {
+    color: var(--cor1);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.tituloLinha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 15px;
+    color: var(--cor1);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.tituloLinha::before,
+.tituloLinha::after {
+    content: "";
+    height: 1px;
+    background-color: var(--cor1);
+    flex: 1;
+}
+
+.barbearia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('./../../imgs/sobre/fundo1sobre.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 80vh;
+}
+
+.barbearia > p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 8px;
+}
+
+.barbearia > p:nth-of-type(1) {
+    font-size: 24px;
+    line-height: 1.1;
+    margin: 15px auto 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.barbearia > p:nth-of-type(2) {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 15px auto 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.destaque {
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(59, 58, 58);
+    gap: 10px;
+    background-color: rgba(24, 22, 22, 0.479);
+}
+
+.fundador {
+    width: 55%;
+   border-radius: 10px;
+}
+
+.bioContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bio > h2 {
+    font-size: 18px;
+}
+
+.bioContent > h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.bioContent > p:nth-of-type(1) {
+   font-size: 15px;
+}
+
+.bioContent > p:nth-of-type(2) {
+   font-size: 14px;
+}
+
+.bioContent > p:nth-of-type(3) {
+   font-size: 13px;
+}
+
+.bioContent p {
+    line-height: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.linhaTempo {
+    width: 100%;
+}
+
+.missao {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 18px;
+    margin: 30px auto;
+    border: 1px solid rgba(var(--cor2), 0.35);
+    border-radius: 18px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.logoCta {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+    padding: 8px;
+    border-radius: 50%;
+    background: rgba(var(--cor2), 0.08);
+    box-shadow:
+        0 0 0 1px rgba(var(--cor2), 0.15),
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.missao > h3 {
+    color: var(--cor1);
+    margin: 0;
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.missao > p {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: center;
+    opacity: 0.85;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 12px;
+}
+
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+.card > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 18px;
+    border: 1px solid rgba(var(--cor2), 0.25);
+    border-radius: 14px;
+    background: rgba(var(--cor2), 0.025);
+    gap: 10px;
+    box-sizing: border-box;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card svg {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    color: var(--cor1);
+    margin: 0 0 6px;
+    filter: drop-shadow(
+        0 4px 8px rgba(var(--cor1-rgb), 0.15)
+    );
+}
+
+.card > div > h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+
+.card > div > p {
+    width: 100%;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+    opacity: 0.78;
+}
+
+.card > div::before {
+    content: "";
+    width: 35px;
+    height: 2px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    background: var(--cor1);
+    opacity: 0.7;
+}
+
+.card > div:hover {
+    transform: translateY(-3px);
+    border-color: rgba(var(--cor2), 0.5);
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.missao,
+.missao *,
+.card,
+.card * {
+    box-sizing: border-box;
+}
+
+.missao img,
+.card svg {
+    max-width: 100%;
+}
+
+.barbSobre {
+    width: 95%;
+    height: 200px;
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.finalCTA {
+    position: relative;
+    width: 90%;
+    max-width: 650px;
+    margin: 20px auto 40px;
+    padding: 45px 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(var(--cor2), 0.35);
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(var(--cor2), 0.08),
+            rgba(0, 0, 0, 0.25)
+        );
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+
+.finalCTA::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+
+    top: -90px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    background: var(--cor1);
+    opacity: 0.08;
+
+    filter: blur(10px);
+}
+
+
+.finalCTA::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    width: 80px;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background: var(--cor1);
+    border-radius: 10px;
+}
+
+
+.finalCTAContent {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    max-width: 500px;
+}
+
+
+.finalLogo {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+
+    margin-bottom: 12px;
+
+    filter: drop-shadow(
+        0 5px 12px rgba(var(--cor1-rgb), 0.2)
+    );
+}
+
+
+.finalLabel {
+    color: var(--cor1);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+.finalCTA h2 {
+    margin: 0;
+
+    font-size: clamp(1.4rem, 5vw, 2rem);
+
+    line-height: 1.2;
+
+    color: var(--cor2);
+}
+
+
+.finalCTA p {
+    margin: 15px 0 25px;
+
+    max-width: 430px;
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+
+    opacity: 0.75;
+}
+
+
+.botaoFinal {
+    width: auto;
+    min-width: 220px;
+
+    padding: 13px 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+
+    background: var(--cor1);
+    color: #000;
+
+    cursor: pointer;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.botaoFinal:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(var(--cor1-rgb), 0.25);
+}
+
+
+.botaoWhats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    white-space: nowrap;
+}
+
+
+.botaoWhats svg {
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1920px) {
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecario {
+        height: 75px;
+        margin: 0;
+        justify-content: center;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+
+    .imagem {
+        height: 65px;
+    }
+
+
+    .titulo {
+        font-size: 20px;
+        margin: 25px 0;
+        letter-spacing: 1px;
+    }
+
+    .tituloLinha {
+        width: 85%;
+        max-width: 1400px;
+        margin: 55px 0 35px;
+
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .barbearia {
+        position: relative;
+        
+        width: 100%;
+        height: 520px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 8%;
+        box-sizing: border-box;
+
+        background-position: center;
+        text-align: left;
+    }
+
+    .barbearia::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.82) 0%,
+                rgba(0, 0, 0, 0.58) 45%,
+                rgba(0, 0, 0, 0.15) 100%
+            );
+    }
+
+    .barbearia > p {
+        position: relative;
+        z-index: 1;
+
+        background-color: transparent;
+
+        text-align: left;
+        margin: 0;
+        padding: 0;
+
+        max-width: 800px;
+    }
+
+    .barbearia > p:nth-of-type(1) {
+        font-size: clamp(30px, 3vw, 46px);
+        line-height: 1.15;
+
+        margin: 0 0 25px;
+        padding: 0;
+    }
+
+    .barbearia > p:nth-of-type(2) {
+        max-width: 700px;
+
+        font-size: clamp(17px, 1.4vw, 22px);
+        line-height: 1.7;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .bio {
+        width: 85%;
+        max-width: 1250px;
+
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: auto 1fr;
+
+        align-items: center;
+
+        margin: 70px auto 20px;
+        padding: 45px;
+
+        gap: 15px 50px;
+
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+
+    .bio > h2 {
+        grid-column: 1 / -1;
+
+        font-size: 24px;
+        margin: 0 0 15px;
+        text-align: center;
+    }
+
+    .fundador {
+        width: 70%;
+        max-width: 480px;
+
+        justify-self: center;
+
+        border-radius: 16px;
+    }
+
+    .bioContent {
+        align-items: flex-start;
+        text-align: left;
+
+        padding-right: 20px;
+    }
+
+    .bioContent > h3 {
+        font-size: 36px;
+        margin: 0 0 5px;
+    }
+
+    .bioContent > p:nth-of-type(1) {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    .bioContent > p:nth-of-type(2) {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .bioContent > p:nth-of-type(3) {
+        font-size: 16px;
+        line-height: 1.7;
+
+        margin-top: 25px;
+        padding-left: 20px;
+
+        border-left: 2px solid var(--cor1);
+    }
+
+    .bioContent p {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .linhaTempo {
+        width: 85%;
+        max-width: 1300px;
+
+        display: block;
+
+        margin: 0 auto 30px;
+    }
+
+    .missao {
+        width: 85%;
+        max-width: 1250px;
+
+        padding: 50px 60px;
+        margin: 70px auto;
+
+        border-radius: 22px;
+
+        gap: 20px;
+    }
+
+    .logoCta {
+        width: 75px;
+        height: 75px;
+
+        padding: 10px;
+    }
+
+    .missao > h3 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .missao > p {
+        max-width: 750px;
+
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .cards {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 25px;
+
+        margin-top: 25px;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card > div {
+        min-height: 250px;
+
+        padding: 35px 25px;
+
+        border-radius: 16px;
+
+        gap: 13px;
+    }
+
+    .card svg {
+        width: 55px;
+        height: 55px;
+
+        margin-bottom: 8px;
+    }
+
+    .card > div > h3 {
+        font-size: 20px;
+    }
+
+    .card > div > p {
+        max-width: 280px;
+
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .card > div::before {
+        width: 45px;
+        height: 2px;
+    }
+
+    .barbSobre {
+        width: 85%;
+        max-width: 1300px;
+
+        height: 350px;
+
+        margin: 50px auto;
+
+        border-radius: 16px;
+
+        background-position: center;
+    }
+
+    .finalCTA {
+        width: 85%;
+        max-width: 1100px;
+
+        min-height: 380px;
+
+        margin: 70px auto 100px;
+        padding: 60px 50px;
+
+        border-radius: 25px;
+    }
+
+    .finalCTAContent {
+        max-width: 700px;
+    }
+
+    .finalLogo {
+        width: 80px;
+        height: 80px;
+
+        margin-bottom: 15px;
+    }
+
+    .finalLabel {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    .finalCTA h2 {
+        font-size: clamp(2rem, 3vw, 2.8rem);
+        line-height: 1.2;
+    }
+
+    .finalCTA p {
+        max-width: 600px;
+
+        font-size: 16px;
+        line-height: 1.8;
+
+        margin: 18px 0 30px;
+    }
+
+    .botaoFinal {
+        min-width: 250px;
+
+        padding: 15px 28px;
+
+        border-radius: 30px;
+
+        font-size: 15px;
+    }
+
+    .botaoWhats {
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .barbearia {
+    min-height: 520px;
+  }
+
+  .bio,
+  .missao,
+  .finalCTAContent {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .cabecario {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .barbearia {
+    min-height: 480px;
+  }
+
+  .bio {
+    grid-template-columns: 42% 58%;
+    gap: 35px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .finalCTAContent {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .cabecario {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .imagem {
+    max-width: 15%;
+    height: auto;
+  }
+
+  .titulo {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+  }
+
+  .barbearia {
+    width: 100%;
+    min-height: 420px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 5%;
+    margin: 50px;
+  }
+
+  .fundador,
+  .bioContent {
+    width: 50%;
+  }
+
+  .linhaTempo {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .missao {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .finalCTAContent {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* Celulares */
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .cabecario {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .titulo {
+    font-size: clamp(1.8rem, 9vw, 2.7rem);
+    line-height: 1.1;
+  }
+
+  .tituloLinha {
+    flex-wrap: wrap;
+  }
+
+  .barbearia {
+    width: 100%;
+    min-height: 360px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+    margin: 50px;
+  }
+
+  .fundador,
+  .bioContent {
+    width: 40%;
+  }
+
+  .linhaTempo {
+    width: 100%;
+  }
+
+  .missao {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logoCta {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .barbSobre {
+    width: 100%;
+  }
+
+  .finalCTA {
+    width: 100%;
+  }
+
+  .finalCTAContent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .finalLogo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .finalCTA h2 {
+    font-size: clamp(1.7rem, 8vw, 2.5rem);
+  }
+
+  .finalCTA p {
+    font-size: 1rem;
+  }
+
+  .botaoFinal,
+  .botaoWhats {
+    max-width: 100%;
+  }
+}

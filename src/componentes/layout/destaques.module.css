@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.6em;
+    text-align: center;
+    color: var(--cor1);
+    margin-top: 10px;
+}
+
+.titulo:before, .titulo:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--cor1);
+}
+
+.containerFilho {
+    display: flex;
+    gap: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(10, 10, 10, 0.301);
+    border-radius: 8px;
+    margin: 10px 5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(var(--cor2), 0.1);
+}
+
+.card h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.card svg {
+    height: 50px;
+    width: 30px;
+    color: rgba(var(--cor2),.9);
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.card:nth-of-type(2) svg{
+    width: 60px;
+}
+
+.card2 {
+    width: 90%;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: center;
+}
+
+.titulo2 {
+ font-size: 22px;  
+}
+
+.card2  p {
+    text-align: left;
+}
+
+.card2 h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.icons2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+
+.containerAgendar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.imagensBarb {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.todas {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.agendar {
+    border: 1px solid  rgba(var(--cor2),.6);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 10px 80px 10px;
+    padding: 10px;
+}
+
+.contentAgendar {
+    display: flex;
+}
+
+.amarelo {
+    background-color: rgb(212, 184, 20);
+    color: black;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    border-radius: 8px;
+    width: 90%;
+    cursor: pointer;
+    transition: transform .1s ease;
+    font-weight: bolder;
+}
+
+.amarelo svg {
+    width: 20px;
+    height: 20px;
+}
+
+.amarelo:hover {
+    transform: scale(1.06);
+}
+
+
+.ptexto {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+}
+
+.ptexto h2 {
+    margin-bottom: 5px;
+}
+
+.ptexto2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1023px){
+    .card {
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .todas {
+        height: 110px;
+        width: 600px;
+    }
+
+    .card {
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1920px) {
+
+    .imagensBarb {
+        height: 240px;
+    }
+    
+    .todas {
+        height: 210px;
+        width: 700px;
+    }
+
+    .agendar {
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+    }
+
+    .amarelo {
+        width: 20%;
+        text-align: center;
+    }
+
+    .contentAgendar {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .mostrar {
+        display: none;
+    }
+
+    .ptexto {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .ptexto2 {
+        font-size: 12px;
+    }
+
+    .containerFilho {
+        justify-content: space-evenly;
+    }
+
+    .containerFilho > .card {
+        width: 10%;
+    }
+
+    .containerCards2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card2 {
+        flex-direction: column;
+        width: 16%;
+    }
+
+    .cards2 > div > h3{
+        text-align: center;
+    }
+}

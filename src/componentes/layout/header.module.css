@@ -1,0 +1,30 @@
+.cabecario {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem {
+    width: auto;
+    height: 55px;
+}
+
+.menu {
+    height: 25px;
+    width: 35px;
+    color: white;
+    cursor: pointer;
+    transform-origin: right center;
+    transition: transform .1s ease;
+}
+
+.menu:hover {
+    transform: scale(1.1);
+}
+
+.menu svg {
+    height: 100%;
+    width: 100%;
+}
