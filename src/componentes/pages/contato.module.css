@@ -78,6 +78,10 @@
     color: var(--cor1);
 }
 
+.svgPrime {
+    color: black!important;
+}
+
 .CTA2 {
     display: flex;
     justify-content: center;
@@ -152,7 +156,7 @@
     width: 40px;
     height: 30px;
     flex-shrink: 0;
-    color: var(--cor1);
+    color: black;
 }
 
 .card h3 {
@@ -214,7 +218,7 @@
 }
 
 .imgLocal:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .contentLocal h3 {
@@ -245,6 +249,23 @@
 .contentLocal p:nth-of-type(1) {
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.ptexto2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ptexto2 svg {
+    height: 20px;
+    width: 54px;
+}
+
+@media screen and (min-width: 370px) {
+    .amarelo {
+        width: 77%!important;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
